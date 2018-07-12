@@ -16,14 +16,16 @@ several other applications, including zsh, bash, fish, tmux, IPython, Awesome, i
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/powerline-status-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/powerline-status-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/powerline-status-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/powerline-status-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/powerline-status-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/powerline-status-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/powerline-status-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/powerline-status-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/powerline-status-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/powerline-status-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/powerline-status-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/powerline-status-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/powerline-status/badges/version.svg)](https://anaconda.org/conda-forge/powerline-status)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/powerline-status/badges/downloads.svg)](https://anaconda.org/conda-forge/powerline-status)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-powerline--status-green.svg)](https://anaconda.org/conda-forge/powerline-status) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/powerline-status.svg)](https://anaconda.org/conda-forge/powerline-status) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/powerline-status.svg)](https://anaconda.org/conda-forge/powerline-status) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/powerline-status.svg)](https://anaconda.org/conda-forge/powerline-status) |
 
 Installing powerline-status
 ===========================

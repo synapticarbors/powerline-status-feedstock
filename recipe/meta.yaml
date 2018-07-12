@@ -17,9 +17,10 @@ build:
 
 requirements:
   build:
+    - {{ compiler('c') }}
+  host:
     - python
     - setuptools
-    - toolchain
   run:
     - python
 
@@ -52,7 +53,7 @@ test:
     - powerline.segments.vim
     - powerline.segments.vim.plugin
     - powerline.selectors
-    
+
 
 about:
   home: https://github.com/powerline/powerline
@@ -63,7 +64,7 @@ about:
   summary: 'Powerline is a statusline plugin for vim'
 
   description: |
-    Powerline is a statusline plugin for vim, and provides statuslines and prompts for 
+    Powerline is a statusline plugin for vim, and provides statuslines and prompts for
     several other applications, including zsh, bash, fish, tmux, IPython, Awesome, i3 and Qtile.
   doc_url: https://powerline.readthedocs.io
   dev_url: https://github.com/powerline/powerline
