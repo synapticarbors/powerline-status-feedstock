@@ -1,6 +1,6 @@
 {% set name = "powerline-status" %}
-{% set version = "2.6" %}
-{% set sha256 = "3f460a72b69fcfad74646c17759f851a721d243415c11e1dbf60c5b74dc1d2c3" %}
+{% set version = "2.7" %}
+{% set sha256 = "8c7e7da45beb2332bc8226b166b732ef70db2cb0a1f3f0fdc3c539115522ecb6" %}
 
 package:
   name: {{ name|lower }}
@@ -13,13 +13,14 @@ source:
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   build:
     - {{ compiler('c') }}
   host:
     - python
+    - pip
     - setuptools
   run:
     - python
