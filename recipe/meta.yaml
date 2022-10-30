@@ -1,19 +1,17 @@
 {% set name = "powerline-status" %}
-{% set version = "2.7" %}
-{% set sha256 = "8c7e7da45beb2332bc8226b166b732ef70db2cb0a1f3f0fdc3c539115522ecb6" %}
+{% set version = "2.8.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://github.com/powerline/powerline/releases/download/{{ version }}/powerline-{{ version }}.tar.gz
+  sha256: 45d838dbac94a1363942899708b6ce7c71c1cad9e1b9d048affab4f630c4cb98
 
 build:
-  number: 1005
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -54,14 +52,17 @@ test:
     - powerline.segments.vim
     - powerline.segments.vim.plugin
     - powerline.selectors
+  requires:
+    - pip
+  commands:
+    - pip check
 
 
 about:
   home: https://github.com/powerline/powerline
   license: MIT
   license_family: MIT
-  # License file not include in source distribution. See: https://github.com/powerline/powerline/pull/1873
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
+  license_file: LICENSE
   summary: 'Powerline is a statusline plugin for vim'
 
   description: |
